@@ -9,6 +9,14 @@ body {
     font-family: 'Arial', sans-serif;
     overflow: hidden;
 }
+#introText {
+    color: white;
+    font-size: 20px;
+    margin: 0 30px;
+    max-width: 600px;
+    line-height: 1.6;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
 
 .container {
     text-align: center;
