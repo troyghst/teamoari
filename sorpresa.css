@@ -9,6 +9,7 @@ body {
     font-family: 'Arial', sans-serif;
     overflow: hidden;
 }
+
 #introText {
     color: white;
     font-size: 20px;
@@ -67,11 +68,24 @@ button {
     background: #78909c;
 }
 
-#responseMessage {
+#responseMessage,
+#responseMessage2 {
     font-size: 22px;
     color: white;
     margin-top: 20px;
     display: none;
+}
+
+/* Imagen final */
+#finalImage {
+    margin-top: 20px;
+    max-width: 90%;
+    max-height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Fondo de partículas */
