@@ -28,7 +28,7 @@ setTimeout(() => {
 
 yesBtn.addEventListener("click", () => {
     responseMessage.textContent = "Eres el amor de mi vidaaaa y aunque estemos separados no dejare de amarte como el primer día, te amo demasiado mi ari preciosaaa💗💗💗";
-    responseMessage2.textContent = "Si t tengo un regalito tmb, es d roblox : asd";
+    responseMessage2.textContent = "t tengo un rehalito jsa el siguiente ticket en wa 😝😝😝";
     responseMessage.style.display = "block";
     responseMessage2.style.display = "block";
     finalImage.style.display = "block"; // Mostrar la imagen
