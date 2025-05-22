@@ -23,12 +23,13 @@ setTimeout(() => {
     questionElement.style.display = "block";
     buttonGroup.style.display = "block";
     typeQuestion();
-}, 15000); // Espera 5 segundos antes de mostrar la pregunta
+}, 20000); // Espera 5 segundos antes de mostrar la pregunta
 
 yesBtn.addEventListener("click", () => {
     responseMessage.textContent = "Eres el amor de mi vidaaaa y aunque estemos separados no dejare de amarte como el primer día, te amo demasiado mi ari preciosaaa💗💗💗";
-    responseMessage2.textContent = "Si t tengo un regalito tmb, es d roblox : asd";
+    responseMessage2.textContent = "t tengo un regalito tmb utiliza el mismo ticket 😝";
     responseMessage.style.display = "block";
+    responseMessage2.style.display = "block";
     noBtn.style.display = "none";
     yesBtn.style.transform = "scale(1.2)";
 });
