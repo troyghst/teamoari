@@ -1,4 +1,3 @@
-const introText = document.getElementById("introText");
 const questionText = "¿Lo volvemos a intentar? 💗";
 const questionElement = document.getElementById("question");
 const yesBtn = document.getElementById("yesBtn");
@@ -18,13 +17,12 @@ function typeQuestion() {
     }
 }
 
-// Mostrar la pregunta después de unos segundos
+// Mostrar la pregunta y botones sin ocultar el texto inicial
 setTimeout(() => {
-    introText.style.display = "none";
     questionElement.style.display = "block";
     buttonGroup.style.display = "block";
     typeQuestion();
-}, 5000); // 5 segundos de espera
+}, 5000); // Espera 5 segundos antes de mostrar la pregunta
 
 yesBtn.addEventListener("click", () => {
     responseMessage.textContent = "Eres el amor de mi vidaaaa y aunque estemos separados no dejare de amarte como el primer día, te amo demasiado mi ari preciosaaa💗💗💗";
@@ -34,7 +32,7 @@ yesBtn.addEventListener("click", () => {
 });
 
 noBtn.addEventListener("click", () => {
-    responseMessage.textContent = "Estas seguraaaa? 🥺💔";
+    responseMessage.textContent = "¿Estás seguraaaa? 🥺💔";
     responseMessage.style.display = "block";
 });
 
