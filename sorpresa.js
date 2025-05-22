@@ -1,10 +1,13 @@
+const introText = document.getElementById("introText");
 const questionText = "¿Lo volvemos a intentar? 💗";
 const questionElement = document.getElementById("question");
 const yesBtn = document.getElementById("yesBtn");
 const noBtn = document.getElementById("noBtn");
+const buttonGroup = document.getElementById("buttonGroup");
 const responseMessage = document.getElementById("responseMessage");
 
 let index = 0;
+
 function typeQuestion() {
     if (index < questionText.length) {
         questionElement.textContent += questionText.charAt(index);
@@ -15,7 +18,13 @@ function typeQuestion() {
     }
 }
 
-setTimeout(typeQuestion, 500);
+// Mostrar la pregunta después de unos segundos
+setTimeout(() => {
+    introText.style.display = "none";
+    questionElement.style.display = "block";
+    buttonGroup.style.display = "block";
+    typeQuestion();
+}, 5000); // 5 segundos de espera
 
 yesBtn.addEventListener("click", () => {
     responseMessage.textContent = "Eres el amor de mi vidaaaa y aunque estemos separados no dejare de amarte como el primer día, te amo demasiado mi ari preciosaaa💗💗💗";
