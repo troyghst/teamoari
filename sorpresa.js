@@ -4,7 +4,8 @@ const yesBtn = document.getElementById("yesBtn");
 const noBtn = document.getElementById("noBtn");
 const buttonGroup = document.getElementById("buttonGroup");
 const responseMessage = document.getElementById("responseMessage");
-const responseMessage2 = document.getElementById("responseMessage2")
+const responseMessage2 = document.getElementById("responseMessage2");
+const finalImage = document.getElementById("finalImage");
 
 let index = 0;
 
@@ -23,13 +24,14 @@ setTimeout(() => {
     questionElement.style.display = "block";
     buttonGroup.style.display = "block";
     typeQuestion();
-}, 20000); // Espera 5 segundos antes de mostrar la pregunta
+}, 15000);
 
 yesBtn.addEventListener("click", () => {
     responseMessage.textContent = "Eres el amor de mi vidaaaa y aunque estemos separados no dejare de amarte como el primer día, te amo demasiado mi ari preciosaaa💗💗💗";
-    responseMessage2.textContent = "t tengo un regalito tmb utiliza el mismo ticket 😝";
+    responseMessage2.textContent = "Si t tengo un regalito tmb, es d roblox : asd";
     responseMessage.style.display = "block";
     responseMessage2.style.display = "block";
+    finalImage.style.display = "block"; // Mostrar la imagen
     noBtn.style.display = "none";
     yesBtn.style.transform = "scale(1.2)";
 });
