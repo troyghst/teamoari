@@ -9,7 +9,7 @@ function spawnHeart() {
 
     const heart = document.createElement("div");
     heart.classList.add("heart");
-    heart.textContent = "❤️";
+    heart.textContent = "💗";
     heart.style.left = `${Math.random() * 90}vw`;
     heart.style.top = `-50px`;
 
@@ -21,7 +21,7 @@ function spawnHeart() {
 
         if (score === 10) {
             clearInterval(heartInterval);
-            alert("¡Felicidades! Ahora mira la sorpresa ❤️🎉");
+            alert("Bien hecho mi vidaaaaaa ahora mira la sorpresa 😝😝");
             window.location.href = "sorpresa.html"; 
         }
     });
@@ -63,7 +63,7 @@ function drawParticles() {
     for (let particle of particles) {
         ctx.fillStyle = `rgba(255, 0, 100, ${particle.opacity})`;
         ctx.font = `${particle.size}px Arial`;
-        ctx.fillText("❤️", particle.x, particle.y);
+        ctx.fillText("💗", particle.x, particle.y);
         particle.y -= particle.speedY;
 
         if (particle.y < -10) {
