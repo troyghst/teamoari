@@ -1,4 +1,4 @@
-const questionText = "¿Quieres ser mi San Valentín? 💘";
+const questionText = "¿Lo volvemos a intentar? 💗";
 const questionElement = document.getElementById("question");
 const yesBtn = document.getElementById("yesBtn");
 const noBtn = document.getElementById("noBtn");
@@ -18,14 +18,14 @@ function typeQuestion() {
 setTimeout(typeQuestion, 500);
 
 yesBtn.addEventListener("click", () => {
-    responseMessage.textContent = "¡Sabía que dirías que sí! ❤️✨";
+    responseMessage.textContent = "Eres el amor de mi vidaaaa y aunque estemos separados no dejare de amarte como el primer día, te amo demasiado mi ari preciosaaa💗💗💗";
     responseMessage.style.display = "block";
     noBtn.style.display = "none";
     yesBtn.style.transform = "scale(1.2)";
 });
 
 noBtn.addEventListener("click", () => {
-    responseMessage.textContent = "¿Estás segura? 🥺💔";
+    responseMessage.textContent = "Estas seguraaaa? 🥺💔";
     responseMessage.style.display = "block";
 });
 
